@@ -243,6 +243,7 @@ public class VSSlider: UIControl {
 
         if let thumbImage = thumbImage {
             slider.setThumbImage(thumbImage, for: .normal)
+            slider.setThumbImage(thumbImage, for: .highlighted)
         } else if let thumbTintColor = thumbTintColor {
             slider.thumbTintColor = thumbTintColor
         }
