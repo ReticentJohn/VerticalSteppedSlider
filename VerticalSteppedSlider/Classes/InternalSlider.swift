@@ -43,6 +43,10 @@ class InternalSlider: UISlider {
         setValue(round(super.value, to: increment), animated: true)
         sendActions(for: .valueChanged)
     }
+    
+    override func beginTracking(_ touch: UITouch, with event: UIEvent?) -> Bool {
+        return true
+    }
 }
 
 fileprivate func round(_ value: Float, to increment: Float) -> Float {
