@@ -35,6 +35,7 @@ class InternalSlider: UISlider {
     }
     
     private func initialize() {
+        isUserInteractionEnabled = false
         addTarget(self, action: #selector(endSliding), for: .touchUpInside)
         addTarget(self, action: #selector(endSliding), for: .touchUpOutside)
     }
